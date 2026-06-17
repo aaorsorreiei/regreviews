@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>Reg Reviews</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #FAF6F0; }
-        .box { background: white; padding: 20px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        body { background-color: #FDFBF7; font-family: 'Kanit', sans-serif; color: #4A3E3D; }
     </style>
 </head>
-<body>
-    <div class="box">
-        <h1>ยินดีต้อนรับสู่ระบบรีวิวของเรา!</h1>
-        <p>กำลังสร้างระบบรีวิววิชาเรียนที่ดั่งใจที่สุดในโลก...</p>
-    </div>
+<body class="p-8">
+
+    <header class="flex justify-between items-center mb-16">
+        <h1 class="text-2xl font-bold">regreviews</h1>
+        <nav class="space-x-6 text-sm">
+            <a href="#">หน้าแรก</a> <a href="#">อ่านรีวิว</a> <a href="#">เข้าสู่ระบบ</a>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">เพื่อนรักยามอยากลงทะเบียน</h2>
+        <button class="bg-[#8C6239] text-white px-8 py-3 rounded-full mb-10">เริ่มอ่านรีวิว</button>
+
+        <div class="flex justify-center gap-2 mb-20">
+            <input type="text" placeholder="Keywords" class="border p-3 rounded-lg w-full max-w-sm">
+            <button class="bg-[#8C6239] text-white px-6 py-3 rounded-lg">Search</button>
+        </div>
+
+        <div class="flex justify-center gap-10">
+            <div class="text-center">
+                <div class="w-48 h-48 bg-gray-100 rounded-lg mb-4"></div>
+                <h3 class="font-bold">JC</h3>
+                <p class="text-sm">วิชาคณะวารสารศาสตร์และสื่อสารมวลชน</p>
+            </div>
+            <div class="text-center">
+                <div class="w-48 h-48 bg-gray-100 rounded-lg mb-4"></div>
+                <h3 class="font-bold">TU</h3>
+                <p class="text-sm">วิชามหาวิทยาลัย</p>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
