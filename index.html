@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegReviews - เว็บรีวิววิชาเรียน</title>
+    
+    <!-- 1. ดึงฟอนต์ Prompt จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- 2. Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 3. ตั้งค่าฟอนต์ให้ทั้งเว็บ -->
+    <style>
+        body { font-family: 'Prompt', sans-serif; background-color: #FDFBF7; color: #4A3E3D; }
+    </style>
 </head>
-<body class="bg-[#FDFBF7] text-[#4A3E3D] font-sans">
+<body class="antialiased">
 
     <div class="max-w-4xl mx-auto p-8">
+        <!-- Header -->
         <header class="flex justify-between items-center mb-16">
-            <h1 class="text-2xl font-bold italic tracking-tighter">regreviews</h1>
-            <nav class="space-x-6 text-sm">
+            <h1 class="text-2xl font-extrabold italic tracking-tighter">regreviews</h1>
+            <nav class="space-x-6 text-sm font-medium">
                 <a href="#" class="hover:text-amber-800">หน้าแรก</a>
                 <a href="#" class="hover:text-amber-800">อ่านรีวิว</a>
             </nav>
         </header>
 
+        <!-- Main Content -->
         <main class="text-center">
             <h2 class="text-4xl font-extrabold mb-6">เพื่อนรักยามอยากลงทะเบียน</h2>
-            <button class="bg-[#8C6239] text-white px-8 py-3 rounded-full hover:bg-amber-900 transition">
+            <button class="bg-[#8C6239] text-white px-8 py-3 rounded-full hover:bg-amber-900 transition font-semibold">
                 เริ่มอ่านรีวิว
             </button>
         </main>
